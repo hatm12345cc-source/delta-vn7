@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VN7 | أبوعتب للبرمجة</title>
+    <style>
+        :root {
+            --bg: #050507;
+            --purple: #8e2de2;
+            --card: #0f0f13;
+            --blue: #007bff;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            margin: 0; padding: 0;
+            text-align: center;
+        }
+
+        header {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 15px 5%; background: #000;
+            border-bottom: 2px solid var(--purple);
+            position: sticky; top: 0; z-index: 1000;
+        }
+
+        .menu-icon {
+            width: 45px; height: 45px;
+            cursor: pointer; border-radius: 10px;
+            border: 1px solid var(--purple);
+        }
+
+        .container { max-width: 600px; margin: 20px auto; padding: 15px; }
+
+        .page { display: none; }
+        .active { display: block; animation: fadeIn 0.3s ease; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+        .btn-main {
+            background: #5865F2; display: block; padding: 20px;
+            border-radius: 15px; color: white; text-decoration: none;
+            font-weight: bold; font-size: 18px; margin-bottom: 10px;
+        }
+
+        .section-title {
+            color: #00e5ff; font-size: 20px; margin: 30px 0 15px;
+            border-right: 5px solid var(--purple); padding-right: 15px; text-align: right;
+        }
+
+        .card {
+            background: var(--card); border-radius: 20px; padding: 15px;
+            border: 1px solid #222; margin-bottom: 20px; text-align: right;
+        }
+
+        .card img { width: 100%; border-radius: 15px; margin-bottom: 12px; border: 1px solid #333; }
+
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+
+        .btn-sm {
+            display: block; padding: 12px; border-radius: 12px;
+            color: white; text-decoration: none; font-size: 13px;
+            font-weight: bold; margin-top: 8px; text-align: center;
+        }
+
+        footer { padding: 30px; color: #444; font-size: 12px; }
+
+        @media (max-width: 480px) { .grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://raw.githubusercontent.com/Anis-Kabbaj/DELTA-App/main/Delta.png" class="menu-icon" onclick="toggleMenu()">
+    <div style="font-size: 24px; font-weight: bold;">V<span style="color:var(--purple)">N7</span></div>
+</header>
+
+<div class="container">
+    
+    <div id="home" class="page active">
+        <div class="section-title">القائمة الرئيسية 🏠</div>
+        <a href="https://discord.gg/haX59nFsM" class="btn-main">انضم لسيرفر الديسكورد الرسمي 💬</a>
+        <p style="color:#666">اضغط على الأيقونة في الزاوية فوق لرؤية الهاكات</p>
+    </div>
+
+    <div id="hacks" class="page">
+        
+        <div class="section-title">هاك آيفون 🍎</div>
+        <div class="card">
+            <img src="https://raw.githubusercontent.com/Anis-Kabbaj/DELTA-App/main/Delta.png">
+            <h2>Delta iOS (تثبيت مباشر)</h2>
+            <div style="display: grid; gap: 10px;">
+                <a href="itms-services://?action=download-manifest&url=https://delta.bz/manifest.plist" class="btn-sm" style="background:var(--purple)">تثبيت Delta مباشر</a>
+                <a href="https://nekoo.eu.org/W7dMvm" class="btn-sm" style="background:#6a11cb">Delta VR7 (جديد)</a>
+                <a href="https://cdn.gloopup.net/file/Delta-2.701.966.ipa" class="btn-sm" style="background:var(--blue)">تحميل ملف iPA</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>SkibX iOS</h2>
+            <a href="itms-services://?action=download-manifest&url=https://skibx.com/ota.plist" class="btn-sm" style="background:var(--purple)">تثبيت SkibX مباشر</a>
+        </div>
+
+        <div class="section-title">هاك أندرويد 🤖</div>
+        <div class="grid">
+            <div class="card">
+                <img src="https://raw.githubusercontent.com/Anis-Kabbaj/DELTA-App/main/Delta.png">
+                <h3>Delta Android</h3>
+                <a href="https://www.mediafire.com/file/ti5geyfey7thof9/Delta-2.707.734.apk/file" class="btn-sm" style="background:#ff3838">تحميل v2.707</a>
+            </div>
+            <div class="card">
+                <h3>SkibX Android</h3>
+                <a href="https://www.mediafire.com/file/khh1d18x0sbdfc6/SkibX-2.707.734.apk/file" class="btn-sm" style="background:#ff3838">تحميل v2.707</a>
+            </div>
+            <div class="card">
+                <h3>Codex</h3>
+                <a href="https://www.mediafire.com/file/80ue9v9kcdmnzhh/Codex+v2.708.apk/file" class="btn-sm" style="background:#ff3838">تحميل v2.708</a>
+            </div>
+            <div class="card">
+                <h3>Arceus X Neo</h3>
+                <a href="https://www.mediafire.com/file/5buplrts6jij7z5/Arceus+X+Neo+v2.0.5.apk/file" class="btn-sm" style="background:#ff3838">تحميل v2.0.5</a>
+            </div>
+            <div class="card">
+                <h3>Fluxus</h3>
+                <a href="https://www.mediafire.com/file/3yljs6ggohxnxfl/Fluxus+3.apk/file" class="btn-sm" style="background:#ff3838">تحميل v3</a>
+            </div>
+            <div class="card">
+                <h3>Cryptic</h3>
+                <a href="https://www.mediafire.com/file/2cw9hn5kg5x1vk1/Cryptic.2.689.CrypticExecutor.com+[rtxtop1].apk/file" class="btn-sm" style="background:#ff3838">تحميل</a>
+            </div>
+            <div class="card">
+                <h3>Trigon</h3>
+                <a href="https://www.mediafire.com/file/38mfn2dhkiqgk70/Trigon_2.708.880.apk/file" class="btn-sm" style="background:#ff3838">تحميل</a>
+            </div>
+            <div class="card">
+                <h3>Ronix</h3>
+                <a href="https://www.mediafire.com/file/2351k8zxkpqpc9m/Ronix_64Bits-2.707.734.apk/file" class="btn-sm" style="background:#ff3838">تحميل</a>
+            </div>
+        </div>
+
+        <div class="section-title">هاك الكمبيوتر 💻</div>
+        <div class="grid">
+            <div class="card">
+                <h3>Semo Executor</h3>
+                <a href="https://www.dropbox.com/scl/fi/ppuzmw1nqixti0t55r3y9/Semo-Executor-v3.50.rar?rlkey=nf99s3g8r9krjfcvwedxmgqwy&st=lt6s1bf9&dl=1" class="btn-sm" style="background:var(--blue)">تحميل v3.50</a>
+            </div>
+            <div class="card">
+                <h3>Xeno PC</h3>
+                <a href="https://www.mediafire.com/file/u767iu4khrmwjj3/Xeno-v1.3.20.zip/file" class="btn-sm" style="background:var(--blue)">تحميل v1.3.20</a>
+            </div>
+            <div class="card">
+                <h3>Pro Hacker</h3>
+                <a href="https://gofile.io/d/6npfj8" class="btn-sm" style="background:var(--blue)">تحميل</a>
+            </div>
+            <div class="card">
+                <h3>Trigon Fixer</h3>
+                <a href="https://www.mediafire.com/file/mbavimp9zr0s3gm/Trigon+PC+Fixer.exe/file" class="btn-sm" style="background:var(--blue)">تحميل المصلح</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    VN7 | صنع أبوعتب للبرمجة والتكنولوجيا © 2026
+</footer>
+
+<script>
+    function toggleMenu() {
+        var home = document.getElementById('home');
+        var hacks = document.getElementById('hacks');
+        if (home.style.display !== 'none') {
+            home.style.display = 'none';
+            hacks.style.display = 'block';
+            hacks.classList.add('active');
+        } else {
+            hacks.style.display = 'none';
+            home.style.display = 'block';
+            home.classList.add('active');
+        }
+    }
+</script>
+
+</body>
+</html>
